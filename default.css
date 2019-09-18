@@ -14,11 +14,11 @@
   }
   .code-wrapper{
       flex: 1;
-      height:40%;
+      height:30%;
   }
   .preview-wrapper{
     flex: 1;
-    height:60%;
+    height:70%;
   }
   .code-wrapper > #code {
     overflow: auto;
