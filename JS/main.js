@@ -128,6 +128,9 @@
   border-top:none;
   border-right:none;
 }
+/*
+ * 表情太严肃了
+*/
 .upperLip.left{
   transform: rotate(-20deg);
 }
