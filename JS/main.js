@@ -116,19 +116,23 @@
   top: 48px;  
   background: #fee433;/*#414549*/
 }
-.upperLip.left{
-  right:50%;
-  border-bottom-left-radius:40px 20px;
-  border-top:none;
-  border-right:none;
-  transform: rotate(-20deg);
-}
 .upperLip.right{
   left:50%;
   border-bottom-right-radius:40px 20px;
   border-top:none;
   border-left:none;
-  transform: rotate(20deg);
+}
+.upperLip.left{
+  right:50%;
+  border-bottom-left-radius:40px 20px;
+  border-top:none;
+  border-right:none;
+}
+.upperLip.left{
+  transform: rotate(-20deg);
+}
+.upperLip.right{
+transform: rotate(20deg);
 }
 /*
  * 画下嘴唇
