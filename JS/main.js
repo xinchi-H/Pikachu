@@ -12,7 +12,7 @@
         window.clearInterval(id)
         fn && fn.call()
       }
-    }, 30)
+    }, 50)
   }
   let code = `
 /*
@@ -68,18 +68,18 @@
   border: 2px solid black;
 }
 /*
- * 左眼在左边（废话）
-*/
-.eye.left{
-  right:50%;
-  margin-right: 90px;  
-}
-/*
  * 右眼在右边（废话）
 */
 .eye.right{
   left:50%;
   margin-left: 90px;
+}
+/*
+ * 左眼在左边（废话）
+*/
+.eye.left{
+  right:50%;
+  margin-right: 90px;  
 }
 /*
  * 然后，画皮卡丘的腮红
@@ -97,13 +97,13 @@
 /*
  * 把腮红放在正确的位置
 */
-.face.left{
-  right:50%;
-  margin-right:116px;
-}
 .face.right{
   left:50%;
   margin-left:116px;
+}
+.face.left{
+  right:50%;
+  margin-right:116px;
 }
 /*
  * 画它的上嘴唇
