@@ -28,7 +28,7 @@ body{
   overflow: hidden;
   height: 100%;
 }
-.wrapper{
+.preview-wrapper > .wrapper{
   width:100%;
   height:165px;
   position:relative;
