@@ -25,7 +25,7 @@ body{
   height:50%;
 }
 .code-wrapper > #code {
-  overflow: auto;
+  overflow: hidden;
   height: 100%;
 }
 .wrapper{
