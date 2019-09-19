@@ -23,19 +23,20 @@
     let container = document.querySelector('#code')
     let styleTag = document.querySelector('#styleTag')
     let n = 0
-    let id = setTimeout(function run() {
+    let id
+    id = setTimeout(function run() {
       n += 1
       container.innerHTML = Prism.highlight(prefix + code.substring(0, n), Prism.languages.css, 'css');
       styleTag.innerHTML = code.substring(0, n)
       container.scrollTop = 10000
       if (n < code.length) {
         id = setTimeout(run, duration)
-      } else { 
-      fn && fn.call()
-    }
+      } else {
+        fn && fn.call()
+      }
     }, duration)
-}
-let code = `
+  }
+  let code = `
 /*
  * 首先，需要准备皮卡丘的皮
 */
@@ -189,5 +190,5 @@ transform: rotate(20deg);
  * 好了
  * 这只皮卡丘送给你
 */`
-writeCode('', code)
+  writeCode('', code)
 }.call()
